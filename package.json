@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@testing-library/cypress": "^8.0.2",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-scripts": "1.1.4"
@@ -11,9 +12,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cy:run": "cypress run --browser chrome --headless -q",
+    "cy:open": "cypress open"
   },
   "devDependencies": {
-    "cypress": "^2.1.0"
+    "cypress": "^8.7.0"
   }
 }
